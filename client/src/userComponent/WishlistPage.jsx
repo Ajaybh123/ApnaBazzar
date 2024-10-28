@@ -3,7 +3,7 @@ import Navbar from '@/partials/Navbar'
 import { useDispatch, useSelector } from 'react-redux'
 import { Badge } from '@/components/ui/badge'
 import { ShoppingBag, Trash2 } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { base_url, WISHLIST_API_END_POINT } from '@/utils/constant'
 import axios from 'axios'
 import { removeWishlistItem } from '@/redux/wishlistSlice'
@@ -68,7 +68,12 @@ function WishlistPage() {
                         </div>
                     ))
                 ) : (
-                    <div className='text-gray-600 text-center my-5'>Your wishlist is empty.</div>
+                    <>
+                    <div className='flex flex-col items-center justify-between'>
+                    <div className='text-gray-600  my-5'>Your wishlist is empty.</div>
+                    <Link to='/'  className='border-2 px-4 py-2 rounded-md bg-slate-900 text-white'>Shop Now</Link>
+                    </div>
+                    </>
                 )}
             </div>
 

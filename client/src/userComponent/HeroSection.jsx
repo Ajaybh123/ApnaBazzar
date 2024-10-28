@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import '../App.css'
 
@@ -16,8 +16,7 @@ export default function HeroSection() {
 
 
       <p className='text-sm sm:text-base lg:text-lg text-black mb-4 sm:mb-6 lg:mb-8 mx-4 lg:mx-44 md:block hidden'>
-        Discover top job listings, filter results to match your preferences, and apply easily.
-        Track applications and connect with employers through our intuitive platform. Start building your career today!
+      ApnaBazzar is an innovative e-commerce platform designed to bring a seamless shopping experience to users by offering a diverse range of products, including electronics, cosmetics, fashion, and household essentials.
       </p>
     </div>
 
