@@ -5,7 +5,6 @@ import Login from "./Auth/Login";
 import ProductDetail from "./userComponent/ProductDetail";
 import CartPage from "./userComponent/CartPage";
 import WishlistPage from "./userComponent/WishlistPage";
-import ProductCreate from "./Admin/ProductCreate";
 const appRouter = createBrowserRouter([
   {
     path:'/',
@@ -30,10 +29,6 @@ const appRouter = createBrowserRouter([
   {
     path: '/wishlist',
     element: <WishlistPage />
-  },
-  {
-    path: '/createproduct',
-    element: <ProductCreate />
   }
 ])
 
